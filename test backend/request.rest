@@ -1,0 +1,47 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJVamFuZyBQdWRpbiIsImVtYWlsIjoiZW1haWxAZ21haWwuY29tIiwiaWF0IjoxNjY5NjE4NjkwLCJleHAiOjE2Njk2MjIyOTB9.uEHHLoManmXz5Nsob4EZQ3sU7UMal5Eo4dwmlDLZBk4
+
+
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"Ujang Pudin",
+    "email":"email@gmail.com",
+    "password":"1234",
+    "confirmPassword":"1234"
+}
+
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"email@gmail.com",
+    "password":"1234"
+}
+
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE http://localhost:5000/logout
+
+
+###
+GET http://localhost:5000/epresence
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJVamFuZyBQdWRpbiIsImVtYWlsIjoiZW1haWxAZ21haWwuY29tIiwiaWF0IjoxNjY5NjIyNjAwLCJleHAiOjE2Njk2MjYyMDB9.lp9g4790uzUjcfgRTpfsuAq8isXv7Bb79uSmbaM0nFo
+
+###
+POST http://localhost:5000/add-epresence
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJVamFuZyBQdWRpbiIsImVtYWlsIjoiZW1haWxAZ21haWwuY29tIiwiaWF0IjoxNjY5NjU0ODEzLCJleHAiOjE2Njk3NDEyMTN9.-FktNwctuohpWXIZyRXSODyNJGqKwJkjccLodYtI8oA
+
+Content-Type: application/json
+{
+      "type": "IN",
+      "is_approve": false,
+}
